@@ -1,0 +1,15 @@
+.results1 {
+    float: left;
+    position: absolute;
+    top: 120px;
+    left: 700px;
+    border: 2px solid;
+    width: 500px;
+    height: 300px;
+}
+
+.results p {
+    position: absolute;
+    top: 130px;
+    left: 230px;
+}
