@@ -9,5 +9,6 @@ class SampleView(View):
 top_page = SampleView.as_view()
 
 def search_view(request):
+    
         return render(request, 'Webapp/results.html')
 
