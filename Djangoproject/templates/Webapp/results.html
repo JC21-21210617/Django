@@ -5,12 +5,25 @@
 <html lang="ja">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>results</title>
     <link rel="stylesheet" href="{% static 'css/results.css' %}">
 </head>
 <body>
-    <div class="results1"><p>結果1</p></div>
-    <div class="results2">結果2</div>
-    <div class="results3">結果3</div>
-    <div class="results4">結果4</div>
+    <div class="text1">最も有力な候補はこの作品です</div>
+    <div class="results1">
+        <p>著者: {{ book_author }}</p>
+        <p>発売日: {{ release_date }}</p>
+        <p>書籍名: {{ book_name }}</p>
+        <p>評価: {{ rating }}</p>
+        <p>ジャンル: {{ book_genre }}</p>
+    </div>
+    <div class="text2">その他の候補はこちら</div>
+    <div class="results2"><p>結果2</p></div>
+    <div class="results3"><p>結果3</p></div>
+    <div class="results4"><p>結果4</p></div>
+
+    <button onclick="history.back(-1);return false;"><img src="{% static 'css/return.png' %}"></button>
+
 </body>
+</html>
